@@ -1,9 +1,14 @@
 body{
     font-family: 'Bellota', cursive;
+    overflow: hidden;
 }
-.img, .buttons{
+
+body >main >div{
     position: absolute;
+    width: 100vw;
+    height: 100vh;
 }
+
 .img > div{
     position: absolute;
 }
@@ -16,13 +21,17 @@ body{
 .img >div >div{
     display: grid;
     align-content: end;
-    justify-content: center;
+    justify-items: center;
 }
 .img >div >div >div{
-    background:  rgba(255, 255, 255, 0.32);
-    width: 50vw;
+    width: 50%;
     text-align: center;   
+    display: grid;
     border-radius: 20px 20px 0 0;
+    background:  rgba(255, 255, 255, 0.140);
+}
+.img >div:nth-child(5) >div >div{
+    background:  rgba(255, 255, 255, 0);
 }
 .img >div >div >div >h5{
     font-size: 4em;
@@ -45,6 +54,7 @@ body{
     background: rgba(255, 255, 255, 0.32);
     padding: 1em;
     transition: all 0.2s;
+    cursor: pointer;
 }
 .buttons >img:nth-child(2){
     align-self: end;
@@ -57,4 +67,80 @@ body{
 }
 .buttons >img:hover{
     filter: invert()
+}
+.txt >div >a{
+        color: black;
+        margin: 9rem;
+        text-decoration: none;
+        background: rgba(255, 255, 255, 0.733);
+        width: 30%;
+        justify-self: center;
+        height: 25%;
+        align-self: center;
+        display: grid;
+        align-content: center;
+        font-size: 1.5em;
+        z-index: 100;
+        transition: .2s;
+        position: relative;
+        overflow: hidden;  
+}
+.txt >div >a >span{
+        position: absolute;
+}
+.txt >div >a:hover{
+        transition-delay: 1s;
+        box-shadow: 0 0 40px black, 0 0 80px black, 0 0 120px black;
+        filter: invert()
+}
+
+.txt >div >a >span:nth-child(1){
+   height: 4px;
+   width: 100%;
+   top: 0;
+   left: -100%;
+   background: linear-gradient(90deg, transparent,black);
+}
+.txt >div >a >span:nth-child(2){
+    width: 4px;
+    height: 100%;
+    right: 0;
+    top: -100%;
+    background: linear-gradient(180deg, transparent,black);
+}
+.txt >div >a >span:nth-child(3){
+    height: 4px;
+    width: 100%;
+    bottom: 0;
+    right: -100%;
+    background: linear-gradient(270deg, transparent,black);
+}
+.txt >div >a >span:nth-child(4){
+    width: 4px;
+    height: 100%;
+    left: 0;
+    bottom: -100%;
+    background: linear-gradient(360deg, transparent,black);
+}
+
+    /* animations*/
+
+.txt >div >a:hover >span:nth-child(1){
+    transition: all 1s;
+    left: 100%;
+}
+.txt >div >a:hover >span:nth-child(2){
+    transition: all 1s;
+    transition-delay: .25s;
+    top: 100%;
+}
+.txt >div >a:hover >span:nth-child(3){
+    transition: all 1s;
+    transition-delay: .5s;
+    right: 100%;
+}
+.txt >div >a:hover >span:nth-child(4){
+    transition: all 1s;
+    transition-delay: .75s;
+    bottom: 100%;
 }
