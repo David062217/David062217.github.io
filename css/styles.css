@@ -1,0 +1,60 @@
+body{
+    font-family: 'Bellota', cursive;
+}
+.img, .buttons{
+    position: absolute;
+}
+.img > div{
+    position: absolute;
+}
+.img >div >img, .img >div >div{
+    position: absolute;
+    color: black;
+    width: 100vw;
+    height: 100vh;
+}
+.img >div >div{
+    display: grid;
+    align-content: end;
+    justify-content: center;
+}
+.img >div >div >div{
+    background:  rgba(255, 255, 255, 0.32);
+    width: 50vw;
+    text-align: center;   
+    border-radius: 20px 20px 0 0;
+}
+.img >div >div >div >h5{
+    font-size: 4em;
+    margin: 1em;
+}
+.img >div >div >div >p{
+    font-size: 2em;
+    margin: 1em;
+}
+.buttons{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+.buttons >img{
+    height: 50vh;
+    width: 9vw;
+    background: rgba(255, 255, 255, 0.32);
+    padding: 1em;
+    transition: all 0.2s;
+}
+.buttons >img:nth-child(2){
+    align-self: end;
+    justify-self: end;
+    align-self: center;
+    border-radius: 20px 0px 0px 20px;
+}
+.buttons >img:nth-child(1){
+    border-radius: 0px 20px 20px 0;
+}
+.buttons >img:hover{
+    filter: invert()
+}
