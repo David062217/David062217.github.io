@@ -11,6 +11,7 @@ body >main >div{
 
 .img > div{
     position: absolute;
+    transition: all 1s;
 }
 .img >div >img, .img >div >div{
     position: absolute;
@@ -110,7 +111,11 @@ body >main >div{
         box-shadow: 0 0 40px black, 0 0 80px black, 0 0 120px black;
         filter: invert()
 }
-
+.click2 >div >a:hover{
+    transition-delay: 1s;
+    box-shadow: 0 0 40px black, 0 0 80px black, 0 0 120px black;
+    filter: invert()
+}
 .txt >div >a >span:nth-child(1), .click >div >a >span:nth-child(1){
    height: 4px;
    width: 100%;
@@ -138,6 +143,10 @@ body >main >div{
     left: 0;
     bottom: -100%;
     background: linear-gradient(360deg, transparent,black);
+}
+
+.transition{
+    opacity: 0;
 }
 
     /* animations*/
@@ -195,8 +204,6 @@ body >main >div{
         height: 300%;
     }
 }
-
-
 @media screen and (max-width: 200px){
     .click >div >a{
         font-size: 1em;
