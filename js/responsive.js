@@ -1,7 +1,7 @@
 let size = screen.width;
 let elem = document.querySelectorAll(".img >div >div");
 let button = document.querySelector(".img >div >div >div >a");
-
+resize();
 window.addEventListener("resize", resize);
 
 function resize () {
