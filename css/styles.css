@@ -21,14 +21,14 @@ body >main >div{
 }
 .img >div >div{
     display: grid;
-    align-content: end;
+    align-content: center;
     justify-items: center;
 }
 .img >div >div >div{
     width: 50%;
     text-align: center;   
     display: grid;
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 20px 20px;
     background:  rgba(255, 255, 255, 0.140);
 }
 .img >div:nth-child(5) >div >div{
@@ -149,7 +149,7 @@ body >main >div{
     opacity: 0;
 }
 
-    /* animations*/
+/* animations*/
 
 .txt >div >a:hover >span:nth-child(1){
     transition: all 1s;
@@ -188,6 +188,12 @@ body >main >div{
     transition: all 1s;
     transition-delay: .75s;
     bottom: 100%;
+}
+.img > div:nth-child(9) > div > div{
+    background: none;
+}
+.txt >div >h5{
+    color: rgba(109, 3, 112, 0.904);
 }
 /* responsive */
 

@@ -1,0 +1,33 @@
+body{
+    display: grid;
+    font-family: 'Bellota', cursive;
+    align-items: center;
+    justify-items: center;
+    background: rgb(58, 58, 167);
+}
+body >div{
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    color: blanchedalmond;
+    width: 60%;
+    height: 60%;
+    border-radius: 30px;
+    text-align: justify;
+    padding: 1rem;
+}
+a{
+    color: burlywood;
+    padding: 1rem 2rem;
+    background: cyan;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all .5s;
+}
+a:hover{
+    color: darkblue;
+    background: darkred;
+}
+@media screen and(max-width: 1200px){
+    
+}
