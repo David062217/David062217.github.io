@@ -1,7 +1,6 @@
 let size = screen.width;
 let elem = document.querySelectorAll(".img >div >div");
 let button = document.querySelector(".img >div >div >div >a");
-resize();
 window.addEventListener("resize", resize);
 
 function resize () {
@@ -14,8 +13,8 @@ function resize () {
             setTimeout(() => {
                 elem[elem.length -1].classList.remove("click2")
             }, 1500);
-        })
+        });
     }
+    console.log(size)
 }
-
-
+resize();
