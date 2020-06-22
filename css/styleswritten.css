@@ -3,12 +3,12 @@ body{
     font-family: 'Bellota', cursive;
     align-items: center;
     justify-items: center;
-    background: rgb(58, 58, 167);
+    background: rgb(63, 19, 104);
 }
 body >div{
     display: grid;
     align-content: center;
-    justify-items: center;
+    justify-items: left;
     color: blanchedalmond;
     width: 60%;
     height: 60%;
@@ -16,18 +16,25 @@ body >div{
     text-align: justify;
     padding: 1rem;
 }
+body >div >h1{
+    font-size: 3rem;
+    justify-self: center;
+}
+body >div >p{
+    font-size: 1.5em;
+}
 a{
-    color: burlywood;
+    color: blanchedalmond;
     padding: 1rem 2rem;
-    background: cyan;
+    background:rgba(0, 0, 0, 0.596);
     text-decoration: none;
     border-radius: 30px;
     transition: all .5s;
+    justify-self: center;
 }
 a:hover{
-    color: darkblue;
-    background: darkred;
+    color: rgb(0, 0, 0);
+    background: rgba(255, 255, 254, 0.829);
 }
-@media screen and(max-width: 1200px){
-    
+@media screen and(max-width: 1200px){  
 }
